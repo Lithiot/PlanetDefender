@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
             canCharge = false;
             OnZeroEnergy();
         }
-        else if (!canCharge && currentEnergy >= energy * 0.2)
+        else
             canCharge = true;
     }
 

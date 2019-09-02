@@ -20,14 +20,13 @@ public class InputManager : GenericSingleton<InputManager>
     {
         if (!GameManager.instance.isGameOver)
         {
+            /* 
             if (Input.GetKey(KeyCode.Space))
-                inputState = TouchState.Pressed;
             else if (Input.GetKeyUp(KeyCode.Space))
                 inputState = TouchState.Ended;
             else
                 inputState = TouchState.Idle;
-
-            /*
+            */
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
@@ -53,7 +52,6 @@ public class InputManager : GenericSingleton<InputManager>
             }
             else
                 inputState = TouchState.Idle;
-                */
         }
         else
             inputState = TouchState.Idle;
